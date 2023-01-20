@@ -1,0 +1,126 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App .bookForm {
+  margin: 20px 0;
+  background-color: gainsboro;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.App .bookForm div {
+  margin: 10px 0;
+}
+
+.App .bookForm label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input {
+  border: none;
+  line-height: 2em;
+}
+
+button {
+  margin: 0 5px;
+}
+
+.submitBtn button {
+  margin-top: 10px;
+}
+
+.submitBtn button:hover {
+  border: 1px solid #000;
+}
+
+.bookList div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookList div:first-of-type button {
+  color: white;
+  background-color: rgb(103, 121, 127);
+  margin-bottom: 10px;
+}
+
+.bookList div:first-of-type button:hover {
+  background-color: rgb(71, 90, 97);
+}
+
+form button:nth-child(4) {
+  background-color: aquamarine;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  background-color: aquamarine;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+table th:first-of-type {
+  width: 5%;
+}
+
+.edit,
+.delete {
+  background: rgb(222, 231, 252);
+  margin: 3px;
+}
+
+.edit:hover,
+.delete:hover {
+  background: rgb(189, 207, 248);
+}
