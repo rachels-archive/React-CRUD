@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BookDataService from "../services/book.services";
 
-const Addbook = ( {id, setBookId}) => {
+const Addbook = ( {id, setBookId} ) => {
 
   const [ title, setTitle ] = useState("");
   const [ author, setAuthor ] = useState("");
@@ -70,6 +70,14 @@ const Addbook = ( {id, setBookId}) => {
 
   return (
     <>
+        <div className="modal">
+          {message?.msg && (
+            <div style={{background: message.error ? "#f5b7b1": "#d4efdf", padding:"10px"}}>
+              {message?.msg}
+            </div>
+          )}
+        </div>
+
         <div className='bookForm'>
         <form onSubmit={handleSubmit}>
             <div className='formBookTitle'>
